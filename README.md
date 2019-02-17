@@ -21,7 +21,7 @@ Just a simple scafolding of a Scala project in order to run the tests
 git checkout scafolding
 ```
 
-### Sum properties:
+### Sum properties (15'):
 In this branch, you'll find the definition of each test we'll need to implement in order to test a sum
 ```
 git checkout sum-properties
@@ -32,14 +32,22 @@ git checkout sum-properties-solved
 ```
 
 
-### Know your tooling
-* playing-with-library
-* playing-with-library-solved
+### Know your tooling (15')
+It's time to know about the internals of the library, so we'll just play with the tool.
 
-### Fibonacci properties:
+```
+git checkout playing-with-library
+```
+
+```
+git checkout playing-with-library-solved
+```
+
+
+### Fibonacci properties (5'):
 * fibonacci-properties
-* fibonacci-properties-solve
+* fibonacci-properties-solved
 
 ### Collection properties:
 * collection-properties
-* collection-properties-solve
+* collection-properties-solved
