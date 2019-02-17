@@ -21,12 +21,11 @@ Just a simple scafolding of a Scala project in order to run the tests
 git checkout scafolding
 ```
 
-<<<<<<< HEAD
 ### Sum properties (15'):
-=======
-### Sum properties:
->>>>>>> Add properties for a sum
-In this branch, you'll find the definition of each test we'll need to implement in order to test a sum
+
+In this branch, you'll find the definition of each test we'll need to implement in order to test a sum. 
+Just find the test in [WeCodePlaygroundSpec.scala](src/test/scala/com.emaginalabs.wecodeproperties/WeCodePlaygroundSpec.scala)
+
 ```
 git checkout sum-properties
 ```
@@ -35,10 +34,9 @@ In case you want solved exercises:
 git checkout sum-properties-solved
 ```
 
-<<<<<<< HEAD
-
 ### Know your tooling (15')
 It's time to know about the internals of the library, so we'll just play with the tool.
+Just find the test in [PlayingWithLibrarySpec.scala](src/test/scala/com.emaginalabs.wecodeproperties/PlayingWithLibrarySpec.scala)
 
 ```
 git checkout playing-with-library
@@ -47,8 +45,6 @@ git checkout playing-with-library
 ```
 git checkout playing-with-library-solved
 ```
-=======
->>>>>>> Add properties for a sum
 
 
 ### Fibonacci properties (5'):
