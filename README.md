@@ -56,7 +56,7 @@ git checkout fibonacci-properties
 git checkout fibonacci-properties-solved
 ```
 
-### Collection properties:
+### Collection properties (20'):
 Lets find the main properties every collection should keep  
 Find the test in [CollectionsSpec.scala](src/test/scala/com.emaginalabs.wecodeproperties/CollectionsSpec.scala)
 
