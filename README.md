@@ -23,7 +23,7 @@ git checkout scafolding
 
 ### Sum properties (15'):
 In this branch, you'll find the definition of each test we'll need to implement in order to test a sum. 
-Just find the test in [WeCodePlaygroundSpec.scala](src/test/scala/com.emaginalabs.wecodeproperties/WeCodePlaygroundSpec.scala)
+Just find the test in [WeCodePlaygroundSpec.scala](src/test/scala/com/emaginalabs/wecodeproperties/WeCodePlaygroundSpec.scala)
 
 ```
 git checkout sum-properties
@@ -35,7 +35,7 @@ git checkout sum-properties-solved
 
 ### Know your tooling (15')
 It's time to know about the internals of the library, so we'll just play with the tool.
-Just find the test in [PlayingWithLibrarySpec.scala](src/test/scala/com.emaginalabs.wecodeproperties/PlayingWithLibrarySpec.scala)
+Just find the test in [PlayingWithLibrarySpec.scala](src/test/scala/com/emaginalabs/wecodeproperties/PlayingWithLibrarySpec.scala)
 
 ```
 git checkout playing-with-library
@@ -47,7 +47,7 @@ git checkout playing-with-library-solved
 
 ### Fibonacci properties (5'):
 What do you think is the main property fibonacci should keep? 
-Find the test in [FibonacciSpec.scala](src/test/scala/com.emaginalabs.wecodeproperties/FibonacciSpec.scala)
+Find the test in [FibonacciSpec.scala](src/test/scala/com/emaginalabs/wecodeproperties/FibonacciSpec.scala)
 
 ```
 git checkout fibonacci-properties
@@ -56,9 +56,9 @@ git checkout fibonacci-properties
 git checkout fibonacci-properties-solved
 ```
 
-### Collection properties:
+### Collection properties (20'):
 Lets find the main properties every collection should keep  
-Find the test in [CollectionsSpec.scala](src/test/scala/com.emaginalabs.wecodeproperties/CollectionsSpec.scala)
+Find the test in [CollectionsSpec.scala](src/test/scala/com/emaginalabs/wecodeproperties/CollectionsSpec.scala)
 
 ```
 git checkout collection-properties
