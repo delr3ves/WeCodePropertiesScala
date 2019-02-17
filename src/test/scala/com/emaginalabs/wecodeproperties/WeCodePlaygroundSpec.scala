@@ -5,22 +5,40 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class WeCodePlaygroundSpec extends FlatSpec with PropertyChecks with Matchers {
 
-  val playground = new  WeCodePlayground()
+  val playground = new WeCodePlayground()
 
   "Sum" should "keep the associative property" in {
-    //TODO test the associative property
+    forAll() { (a: Int, b: Int, c: Int) =>
+      playground.sum(playground.sum(a, b), c) shouldBe playground.sum(a, playground.sum(b, c))
+    }
   }
 
   it should "keep the commutative property" in {
-    //TODO test the commutative property
+    forAll() { (a: Int, b: Int) =>
+      playground.sum(a, b) shouldBe playground.sum(b, a)
+    }
   }
 
   it should "have an identity value" in {
-    //TODO test the identity property
+    forAll() { (a: Int) =>
+      playground.sum(a, 0) shouldBe a
+    }
   }
 
+  val sumCases = Table(
+    ("a", "b", "result"),
+    (1, 4, 5),
+    (4, 5, 9),
+    (0, 0, 0),
+    (-1, -5, -6),
+    (1, -5, -4),
+    (-5, 1, -4)
+  )
+
   it should "actually sum a couple numbers" in {
-    //TODO test the sum
+    forAll(sumCases) { (a: Int, b: Int, result: Int) =>
+      playground.sum(a, b) shouldBe result
+    }
   }
 
 }
