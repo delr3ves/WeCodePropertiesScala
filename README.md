@@ -46,8 +46,15 @@ git checkout playing-with-library-solved
 ```
 
 ### Fibonacci properties (5'):
-* fibonacci-properties
-* fibonacci-properties-solved
+What do you think is the main property fibonacci should keep? 
+Find the test in [FibonacciSpec.scala](src/test/scala/com.emaginalabs.wecodeproperties/FibonacciSpec.scala)
+
+```
+git checkout fibonacci-properties
+```
+```
+git checkout fibonacci-properties-solved
+```
 
 ### Collection properties:
 * collection-properties
