@@ -22,8 +22,15 @@ git checkout scafolding
 ```
 
 ### Sum properties:
-* sum-properties
-* sum-properties-solved
+In this branch, you'll find the definition of each test we'll need to implement in order to test a sum
+```
+git checkout sum-properties
+```
+In case you want solved exercises:
+```
+git checkout sum-properties-solved
+```
+
 
 ### Know your tooling
 * playing-with-library
