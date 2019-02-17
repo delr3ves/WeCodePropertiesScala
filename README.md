@@ -14,6 +14,13 @@ sbt test
 
 This project contains a few branches in order to help you with irrelevant implementation details that could be time consuming but don't add any value to this Workshop.  
 
+### Project scafolding:
+Just a simple scafolding of a Scala project in order to run the tests 
+
+```
+git checkout scafolding
+```
+
 ### Sum properties:
 * sum-properties
 * sum-properties-solved
