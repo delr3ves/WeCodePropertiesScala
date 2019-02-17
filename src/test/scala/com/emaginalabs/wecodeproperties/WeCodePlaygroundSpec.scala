@@ -5,7 +5,7 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class WeCodePlaygroundSpec extends FlatSpec with PropertyChecks with Matchers {
 
-  def sum(a: Int, b: Int): Int = ???
+  def sum(a: Int, b: Int): Int = a + b
 
   "Sum" should "keep the associative property" in {
     //TODO test the associative property
