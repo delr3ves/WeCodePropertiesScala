@@ -61,7 +61,8 @@ class CollectionsSpec extends FlatSpec with PropertyChecks with Matchers {
     }
   }
 
-  private def ensureCollectionContainsAllItems[T](haystack: List[T], needle: List[T]): Unit = {
+  private def ensureCollectionContainsAllItems[T](haystack: List[T],
+                                                  needle: List[T]): Unit = {
     needle.foreach {
       haystack should contain(_)
     }
