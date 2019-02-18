@@ -1,4 +1,4 @@
-# WeCodePropertiesScala
+# WeCodePropertiesScala ![Build Status](https://travis-ci.org/delr3ves/WeCodePropertiesScala.svg?branch=master)
 
 Welcome to the Scala implementation of WeCodeFest's property based testing workshop.
 
