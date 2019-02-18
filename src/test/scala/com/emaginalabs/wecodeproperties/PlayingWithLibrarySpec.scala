@@ -5,7 +5,10 @@ import org.scalatest.{FlatSpec, Matchers}
 
 import scala.util.{Failure, Success, Try}
 
-class PlayingWithLibrarySpec extends FlatSpec with PropertyChecks with Matchers {
+class PlayingWithLibrarySpec
+    extends FlatSpec
+    with PropertyChecks
+    with Matchers {
 
   "Playing with the library" should "add logs to know how it executes" in {
     forAll() { (a: Int, b: Int) =>
@@ -27,7 +30,7 @@ class PlayingWithLibrarySpec extends FlatSpec with PropertyChecks with Matchers 
     }
     result match {
       case Failure(exception) => print(exception.getMessage)
-      case Success(_) => fail("The property should fail but it didn't")
+      case Success(_)         => fail("The property should fail but it didn't")
     }
   }
 
