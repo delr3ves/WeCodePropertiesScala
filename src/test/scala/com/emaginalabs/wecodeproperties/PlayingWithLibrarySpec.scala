@@ -6,7 +6,10 @@ import org.scalatest.{FlatSpec, Matchers}
 
 import scala.util.{Failure, Success, Try}
 
-class PlayingWithLibrarySpec extends FlatSpec with PropertyChecks with Matchers {
+class PlayingWithLibrarySpec
+    extends FlatSpec
+    with PropertyChecks
+    with Matchers {
 
   "Playing with the library" should "add logs to know how it executes" in {
     forAll() { (a: Int, b: Int) =>
@@ -35,32 +38,37 @@ class PlayingWithLibrarySpec extends FlatSpec with PropertyChecks with Matchers 
     }
     result match {
       case Failure(exception) => print(exception.getMessage)
-      case Success(_) => fail("The property should fail but it didn't")
+      case Success(_)         => fail("The property should fail but it didn't")
     }
   }
 
   it should "fail when a generator is too restrictive" in {
     val result = Try {
-      forAll(Gen.choose(Int.MinValue, Int.MaxValue).filter(a => {
-        a > 3 && a < 5
-      })) { (a: Int) =>
+      forAll(
+        Gen
+          .choose(Int.MinValue, Int.MaxValue)
+          .filter(a => {
+            a > 3 && a < 5
+          })) { (a: Int) =>
         succeed
       }
     }
     result match {
       case Failure(exception) => print(exception.getMessage)
-      case Success(_) => fail("The property should fail because generator is to restritive")
+      case Success(_) =>
+        fail("The property should fail because generator is to restritive")
     }
   }
 
-  def numericRangeGenerator(a: Int, b: Int): Gen[Int] = for {
-    generated <- Gen.chooseNum(Int.MinValue, Int.MaxValue)
-    absA = Math.abs(a)
-    absB = Math.abs(b)
-    i = Math.abs(generated) % (absB - absA)
-    number = i + absA
-    x = number
-  } yield (number)
+  def numericRangeGenerator(a: Int, b: Int): Gen[Int] =
+    for {
+      generated <- Gen.chooseNum(Int.MinValue, Int.MaxValue)
+      absA = Math.abs(a)
+      absB = Math.abs(b)
+      i = Math.abs(generated) % (absB - absA)
+      number = i + absA
+      x = number
+    } yield (number)
 
   it should "fail when a generator is limited but not restrictive" in {
     forAll(numericRangeGenerator(3, 5)) { (a: Int) =>
