@@ -10,7 +10,7 @@ object Fibonacci {
       case 0 => a
       case _ => fib_tail(n - 1, b, a + b)
     }
-    return fib_tail(n, 0, 1)
+    fib_tail(n, 0, 1)
   }
 
 }
