@@ -1,5 +1,3 @@
 package com.emaginalabs.wecodeproperties
 
-class WeCodePlayground {
-
-}
+class WeCodePlayground {}
