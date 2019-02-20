@@ -63,14 +63,12 @@ class PlayingWithLibrarySpec
   def numericRangeGenerator(a: Int, b: Int): Gen[Int] =
     for {
       generated <- Gen.chooseNum(Int.MinValue, Int.MaxValue)
-      absA = Math.abs(a)
-      absB = Math.abs(b)
-      i = Math.abs(generated) % (absB - absA)
-      number = i + absA
+      i = Math.abs(generated) % (a - b)
+      number = i + a
       x = number
     } yield (number)
 
-  it should "fail when a generator is limited but not restrictive" in {
+  it should "pass when a generator is limited but not restrictive" in {
     forAll(numericRangeGenerator(3, 5)) { (a: Int) =>
       a should be >= 3
       a should be <= 5
