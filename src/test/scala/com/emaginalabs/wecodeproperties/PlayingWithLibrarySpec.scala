@@ -39,7 +39,7 @@ class PlayingWithLibrarySpec
     //Tip: You can capture the error the same way the previous test :)
   }
 
-  it should "fail when a generator is limited but not restrictive" in {
+  it should "pass when a generator is limited but not restrictive" in {
     //write a custom generator that only generate a very limited range of values.
     //Tip: You can use an already defined generator or just implement yours. I'll do mine :).
   }
