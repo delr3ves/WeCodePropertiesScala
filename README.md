@@ -73,3 +73,15 @@ git checkout collection-properties
 ```
 git checkout collection-properties-solved
 ```
+
+### Kata Maxibon 
+
+The kata definition can be found in the original repo: [https://github.com/delr3ves/MaxibonKataScala](https://github.com/delr3ves/MaxibonKataScala) 
+
+```
+git checkout maxibon-kata
+```
+```
+git checkout maxibon-kata-implemented
+```
+
